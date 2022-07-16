@@ -1,0 +1,43 @@
+body {
+  background-color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin-inline-start: 2rem;
+  width: 500px;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-block-start: 1rem;
+  color: #666;
+}
+
+section {
+  margin-block-start: 4rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+ul {
+  text-align: initial;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 1.6rem;
+  margin-block: 0.25rem;
+}
