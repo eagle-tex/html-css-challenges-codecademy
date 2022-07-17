@@ -17,6 +17,7 @@
 html {
   display: grid;
   grid-template-columns: 3rem 1fr 3rem;
+  background-color: Lavender;
 }
 
 /* Put all direct children of html (body & footer) in grid column 2 */
@@ -25,9 +26,9 @@ html > * {
 }
 
 body {
-  background-color: Gainsboro;
   /* margin-inline-start: 3rem; */
   /* margin-inline-end: 3rem; */
+  margin-block-start: 1rem;
 }
 
 h1 {
@@ -69,6 +70,10 @@ footer {
   margin-block-end: 3rem;
 }
 
+footer ol {
+  margin-inline-start: 2rem;
+}
+
 footer h3 {
   font-size: 1.8rem;
   margin-block: 1rem 1rem;
@@ -77,4 +82,19 @@ footer h3 {
 footer li {
   line-height: 1.6rem;
   margin-block-end: 0.8rem;
+}
+
+/* Add media queries for tablets (768px+) and large screens (1200px+) */
+@media screen and (min-width: 768px) {
+  html {
+    grid-template-columns: auto 680px auto;
+    background-color: Beige;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    grid-template-columns: auto 900px auto;
+    background-color: Aquamarine;
+  }
 }
