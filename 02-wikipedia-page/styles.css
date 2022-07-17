@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: Gainsboro;
+  /* max-width: 32rem; */
+  /* margin-inline: auto; */
+  margin-inline-start: 3rem;
+  margin-inline-end: 3rem;
+}
+
+h1 {
+  margin-block: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+p {
+  text-align: justify;
+  margin-block-end: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+section h2 {
+  color: DarkViolet;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-block: 2rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+section h3 {
+  color: SlateBlue;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-block: 1rem;
+}
+
+hr {
+  border: 0.1px solid Blue;
+  font-weight: lighter;
+}
+
+footer {
+  margin-block-end: 3rem;
+}
+
+footer h3 {
+  font-size: 1.8rem;
+  margin-block: 1rem 1rem;
+}
+
+footer li {
+  line-height: 1.6rem;
+  margin-block-end: 0.8rem;
+}
