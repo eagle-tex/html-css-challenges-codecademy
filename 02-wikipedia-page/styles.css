@@ -9,12 +9,23 @@
   font-size: 62.5%;
 }
 
+/* Set grid formatting context */
+/* with 3rem of margin on each side */
+/* 3rem remaining-space 3rem */
+html {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+}
+
+/* Put all direct children of html (body & footer) in grid column 2 */
+html > * {
+  grid-column: 2;
+}
+
 body {
   background-color: Gainsboro;
-  /* max-width: 32rem; */
-  /* margin-inline: auto; */
-  margin-inline-start: 3rem;
-  margin-inline-end: 3rem;
+  /* margin-inline-start: 3rem; */
+  /* margin-inline-end: 3rem; */
 }
 
 h1 {
