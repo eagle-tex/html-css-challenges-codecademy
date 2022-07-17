@@ -1,9 +1,11 @@
+/* Global reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Set font-family and root (global) font size to 10px */
 :root {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
