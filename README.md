@@ -30,3 +30,26 @@ dedicated to them. The webpage should include:
 - A timeline of the person's life in the form of a list
 
 This can be completed with only HTML, but use CSS to give it some style.
+<<<<<<< Updated upstream
+=======
+
+## Project 02 - Create a Wikipedia page
+
+Wikipedia is one of the backbones of the internet, and it has a relatively
+simple layout. Create a Wikipedia page on the topic of your choice. It should
+include:
+
+- A title or heading
+- A table of contents with links to sections within the page
+- Superscript number links that link to the corresponding number in the
+  reference section
+- An ordered list of references
+
+# Project 03 - Create an HTML and CSS-only search results page
+
+Create a mock Google search results page. It should include:
+
+- The Google logo
+- A search bar at the top
+- A list of search results with clickable links
+>>>>>>> Stashed changes
