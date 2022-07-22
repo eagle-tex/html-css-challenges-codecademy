@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Results</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <!-- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" -->
+    <!-- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
+    <!-- <script -->
+    <!--   src="https://kit.fontawesome.com/136549bcda.js" -->
+    <!--   crossorigin="anonymous" -->
+    <!-- ></script> -->
+
+    <script
+      src="https://kit.fontawesome.com/334d92f176.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label>
+          <img
+            src="./images/Google-Logo.wine.svg"
+            alt="Google logo"
+            class="google-logo"
+          />
+        </label>
+        <div class="search-bar-container">
+          <input type="text" class="search-bar" />
+          <!-- search icon goes here -->
+          <button type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+      <nav id="config">
+        <!-- gear icon goes here  -->
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </li>
+          <!-- rows and columns icon goes here -->
+          <li>
+            <a href="#">
+              <i class="fas fa-th"></i>
+              <!-- The 3 icons below (commented) did not show up because they are part of the Pro version -->
+              <!-- <i class="fa-solid fa-grid"></i> -->
+              <!-- <i class="fa-solid fa-grip-dots-vertical"></i> -->
+              <!-- <i class="fa-thin fa-phone-office"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="#" id="connection">Connection</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Navigation menu with tabs -->
+      <nav id="tabs">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>All</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-image"></i>Images</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-tag"></i>Shopping</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i>Videos</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i>More</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="search-results"></section>
+
+    <section>
+      <h2>Results</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+        delectus!
+      </p>
+    </section>
+  </body>
+</html>

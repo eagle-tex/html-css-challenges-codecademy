@@ -1,0 +1,41 @@
+* {
+  box-shadow: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: LightGrey;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+  margin-block-start: 2rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+img.google-logo {
+  width: 80px;
+}
+
+.search-bar {
+  padding: 1rem;
+  border: 1px solid Red;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+}
+
+nav a {
+  display: block;
+}
