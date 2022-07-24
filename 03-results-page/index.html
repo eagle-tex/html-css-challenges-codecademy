@@ -24,83 +24,311 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <form>
-        <label>
-          <img
-            src="./images/Google-Logo.wine.svg"
-            alt="Google logo"
-            class="google-logo"
-          />
-        </label>
-        <div class="search-bar-container">
-          <input type="text" class="search-bar" />
-          <!-- search icon goes here -->
-          <button type="button">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-      </form>
-      <nav id="config">
-        <!-- gear icon goes here  -->
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-gear"></i>
-            </a>
-          </li>
-          <!-- rows and columns icon goes here -->
-          <li>
-            <a href="#">
-              <i class="fas fa-th"></i>
-              <!-- The 3 icons below (commented) did not show up because they are part of the Pro version -->
-              <!-- <i class="fa-solid fa-grid"></i> -->
-              <!-- <i class="fa-solid fa-grip-dots-vertical"></i> -->
-              <!-- <i class="fa-thin fa-phone-office"></i> -->
-            </a>
-          </li>
-          <li>
-            <a href="#" id="connection">Connection</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="globalContainer">
+      <div class="headerContainer">
+        <form>
+          <a href="https://www.google.com">
+            <img
+              src="./images/Google-Logo.wine.svg"
+              alt="Google logo"
+              class="google-logo"
+            />
+          </a>
+          <div class="searchContainer">
+            <input type="text" placeholder="Search ..." class="searchBox" />
+            <!-- search icon goes here -->
+            <button type="button">
+              <i class="fa-solid fa-xmark closeButton"></i>
+            </button>
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass searchButton"></i>
+            </button>
+          </div>
+        </form>
+        <nav class="configNav">
+          <!-- gear icon goes here  -->
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </li>
+            <!-- rows and columns icon goes here -->
+            <li>
+              <a href="#">
+                <i class="fas fa-th"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="signinButton">Sign in</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Navigation menu with tabs -->
-      <nav id="tabs">
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>All</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-image"></i>Images</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-tag"></i>Shopping</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-youtube"></i>Videos</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i>More</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="break"></div>
+
+        <!-- Navigation menu with tabs -->
+        <nav class="tabsNav">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                All
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-image"></i>
+                Images
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-tag"></i>
+                Shopping
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-newspaper"></i>
+                News
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+                Videos
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                More
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end div.headerContainer -->
     </div>
+    <!-- end div.globalContainer -->
 
-    <section id="search-results"></section>
+    <div class="contentContainer">
+      <small>About 1,010,000,000 results (0.58 seconds)</small>
 
-    <section>
-      <h2>Results</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-        delectus!
-      </p>
-    </section>
+      <!-- Search result 1 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.techtarget.com/whatis/definition/algorithm">
+            https://www.techtarget.com/whatis/definition/algorithm
+          </a>
+        </small>
+        <p>
+          An algorithm is a
+          <em>
+            procedure used for solving a problem or performing a computation
+          </em>
+          . Algorithms act as an exact list of instructions that conduct
+          specified actions step by step in either hardware- or or
+          software-based routines. Algorithms are widely used throughout all
+          areas of IT.
+        </p>
+        <h3>
+          <a href="https://www.techtarget.com/whatis/definition/algorithm">
+            What is an Algorithm? - Definition from WhatIs.com - TechTarget
+          </a>
+        </h3>
+      </div>
+
+      <!-- Search result 2 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </small>
+        <h3>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            Algorithm - Wikipedia https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </h3>
+        <p>
+          In mathematics and computer science, an
+          <em>algorithm</em>
+          is a finitie sequence of rigorous instructions, typically used to
+          solve a class of specifi problems or to ...
+        </p>
+        <a href="#">Regulation of algorithms</a>
+        <a href="#">Algorithms and data structures</a>
+        <a href="#">Rigour</a>
+        <a href="#">List</a>
+      </div>
+
+      <!-- Search result 3 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">
+            https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+          </a>
+        </small>
+        <h3>
+          <a href="#">Algorithms - GeeksforGeeks</a>
+        </h3>
+        <p>
+          Analysis of
+          <em>Algorithms</em>
+          ; Searching and Sorting; Greedy
+          <em>Algorithms</em>
+          ; Dynamic Programming; Pattern Searching; Other String
+          <em>Algorithms</em>
+          ; Backtracking ...
+        </p>
+        <a href="#">Greedy Algorithms</a>
+        <a href="#">Set 1 (Asymptotic Analysis)</a>
+      </div>
+
+      <!-- Search result 4 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.khanacademy.org/computing/algorithms"></a>
+        </small>
+        <h3>
+          <a href="#">Unit: Algorithms - Computer science - Khan Academy</a>
+        </h3>
+        <p>
+          We'll start with an overview of
+          <em>algorithms</em>
+          an then discuss two games that you could use an
+          <em>algorithm</em>
+          to solve more efficiently - the number guessing game and a ...
+        </p>
+      </div>
+
+      <!-- Search result 5 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.mdpi.com/journal/algorithms"></a>
+        </small>
+        <h3>
+          <a href="#">Algorithms | An Open Access Journal from MDPI</a>
+        </h3>
+        <p>
+          <em>Algorithms</em>
+          .
+          <em>Algorithms</em>
+          is a peer-reviewed, open access journal which provides an advanced
+          forum for studies related to
+          <em>algorithms</em>
+          and their applications.
+        </p>
+      </div>
+
+      <!-- Search result 6 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </small>
+        <h3>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            Algorithm - Wikipedia https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </h3>
+        <p>
+          In mathematics and computer science, an
+          <em>algorithm</em>
+          is a finitie sequence of rigorous instructions, typically used to
+          solve a class of specifi problems or to ...
+        </p>
+        <a href="#">Regulation of algorithms</a>
+        <a href="#">Algorithms and data structures</a>
+        <a href="#">Rigour</a>
+        <a href="#">List</a>
+      </div>
+
+      <!-- Search result 7 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">
+            https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+          </a>
+        </small>
+        <h3>
+          <a href="#">Algorithms - GeeksforGeeks</a>
+        </h3>
+        <p>
+          Analysis of
+          <em>Algorithms</em>
+          ; Searching and Sorting; Greedy
+          <em>Algorithms</em>
+          ; Dynamic Programming; Pattern Searching; Other String
+          <em>Algorithms</em>
+          ; Backtracking ...
+        </p>
+        <a href="#">Greedy Algorithms</a>
+        <a href="#">Set 1 (Asymptotic Analysis)</a>
+      </div>
+
+      <!-- Search result 8 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.khanacademy.org/computing/algorithms"></a>
+        </small>
+        <h3>
+          <a href="#">Unit: Algorithms - Computer science - Khan Academy</a>
+        </h3>
+        <p>
+          We'll start with an overview of
+          <em>algorithms</em>
+          an then discuss two games that you could use an
+          <em>algorithm</em>
+          to solve more efficiently - the number guessing game and a ...
+        </p>
+      </div>
+
+      <!-- Search result 9 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://www.mdpi.com/journal/algorithms"></a>
+        </small>
+        <h3>
+          <a href="#">Algorithms | An Open Access Journal from MDPI</a>
+        </h3>
+        <p>
+          <em>Algorithms</em>
+          .
+          <em>Algorithms</em>
+          is a peer-reviewed, open access journal which provides an advanced
+          forum for studies related to
+          <em>algorithms</em>
+          and their applications.
+        </p>
+      </div>
+
+      <!-- Search result 10 -->
+      <div class="searchResult">
+        <small>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </small>
+        <h3>
+          <a href="https://en.wikipedia.org/wiki/Algorithm">
+            Algorithm - Wikipedia https://en.wikipedia.org/wiki/Algorithm
+          </a>
+        </h3>
+        <p>
+          In mathematics and computer science, an
+          <em>algorithm</em>
+          is a finitie sequence of rigorous instructions, typically used to
+          solve a class of specifi problems or to ...
+        </p>
+        <a href="#">Regulation of algorithms</a>
+        <a href="#">Algorithms and data structures</a>
+        <a href="#">Rigour</a>
+        <a href="#">List</a>
+      </div>
+    </div>
   </body>
 </html>

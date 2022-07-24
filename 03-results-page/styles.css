@@ -9,13 +9,23 @@
 }
 
 body {
-  background-color: LightGrey;
+  background-color: rgba(1, 1, 1, 0.9);
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  margin-inline: auto;
 }
 
-div.container {
+.globalContainer {
   margin-block-start: 2rem;
+  margin-inline: 2rem;
+}
+
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(99, 99, 99, 0.5);
 }
 
 form {
@@ -24,18 +34,214 @@ form {
   height: auto;
 }
 
-img.google-logo {
+form img.google-logo {
   width: 80px;
 }
 
-.search-bar {
-  padding: 1rem;
-  border: 1px solid Red;
-  border: none;
+/* .search-bar { */
+/*   padding: 1rem; */
+/*   border: 1px solid Red; */
+/*   border: none; */
+/*   border-radius: 5rem; */
+/*   outline: none; */
+/* } */
+
+.searchContainer {
+  display: inline-flex;
+  flex: 1 0 600px;
+  max-width: 600px;
+  /* border: 1px solid Blue; */
   border-radius: 5rem;
-  outline: none;
+  overflow: hidden;
 }
 
-nav a {
+.searchButton,
+.closeButton {
+  /* margin: 1rem; */
+  padding: 0.4rem 1.2rem;
+  /* background-color: #538ac5; */
+  /* background-color: transparent; */
+  /* background-color: #777; */
+  /* color: rgba(99, 99, 99, 0.5); */
+  border: 0;
+  outline: none;
+  font-size: 2rem;
+}
+
+.closeButton {
+  border-right: 1px solid rgba(55, 55, 55, 0.5);
+  color: #ddd;
+}
+
+.searchButton {
+  color: #538ac5;
+}
+
+.searchBox {
+  border: 0;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  flex: 1;
+  background-color: #777;
+  color: White;
+  font-size: 1.4rem;
+}
+
+.searchBox::placeholder {
+  color: #eee;
+  font-style: italic;
+}
+
+.searchContainer button {
+  border: none;
+  cursor: pointer;
+  background-color: #777;
+}
+
+.headerContainer nav.configNav ul {
+  display: flex;
+  /* width: 18rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainer nav.configNav ul {
+  list-style-type: none;
+}
+
+.headerContainer nav.configNav ul li {
+  display: inline;
+  transition: all 0.3s ease-in;
+  /* padding: 0rem; */
+}
+
+.headerContainer nav.configNav ul li:hover {
+  background-color: rgba(55, 55, 55, 0.3);
+  border-radius: 50%;
+}
+
+.headerContainer nav.configNav ul li i {
+  font-size: 2.5rem;
+  margin: 1rem;
+  color: #999;
+}
+
+.headerContainer nav a:link,
+.headerContainer nav a:visited {
+  color: Black;
+  text-decoration: none;
+}
+
+.headerContainer nav.configNav ul li:last-of-type {
+  background-color: #538ac5;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-inline-start: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.headerContainer nav.configNav ul li:last-of-type:hover {
+  background-color: #aaa;
+  transition: all 0.3s ease-in;
+}
+
+.headerContainer nav a:hover {
+  color: #000;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.headerContainer nav.tabsNav ul {
+  display: flex;
+  margin-inline-start: 6rem;
+  margin-block-start: 2rem;
+  margin-block-end: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainer nav.tabsNav ul li {
+  display: inline-block;
+  margin-inline-start: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.headerContainer nav.tabsNav ul li a:link,
+.headerContainer nav.tabsNav ul li a:visited {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding-block-end: 0.9rem;
+  transition: all 0.3s ease-in;
+}
+
+.headerContainer nav.tabsNav ul li a:hover {
+  border-bottom: 2px solid #538ac5;
+  padding-block-end: 0.9rem;
+}
+
+.headerContainer nav.tabsNav ul li i {
+  margin-inline-end: 0.5rem;
+}
+
+.contentContainer {
+  max-width: 800px;
+  margin-inline-start: 10rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-block-end: 3rem;
+}
+
+.contentContainer > small {
   display: block;
+  margin-block-start: 1rem;
+  margin-block-end: 1.5rem;
+}
+
+.searchResult {
+  margin-block-end: 4rem;
+}
+
+.contentContainer .searchResult > small a:link,
+.contentContainer .searchResult > small a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-block-end: 0.6rem;
+}
+
+.searchResult p {
+  line-height: 2rem;
+  margin-block: 0.6rem;
+}
+
+.searchResult p em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.searchResult > a:link,
+.searchResult > a:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-inline-end: 1rem;
+  color: #538ac5;
+}
+
+.searchResult > a:hover {
+  text-decoration: underline;
+}
+
+.contentContainer .searchResult h3 a:link,
+.contentContainer .searchResult h3 a:visited {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #538ac5;
+  text-decoration: none;
+}
+
+.contentContainer .searchResult h3 a:hover {
+  /* text-decoration: 1px underline dashed Orange; */
+  text-decoration: underline;
 }
