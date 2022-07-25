@@ -42,3 +42,11 @@ include:
 - Superscript number links that link to the corresponding number in the
   reference section
 - An ordered list of references
+
+# Project 03 - Create an HTML and CSS-only search results page
+
+Create a mock Google search results page. It should include:
+
+- The Google logo
+- A search bar at the top
+- A list of search results with clickable links
