@@ -50,3 +50,12 @@ Create a mock Google search results page. It should include:
 - The Google logo
 - A search bar at the top
 - A list of search results with clickable links
+
+# Project 04 - Create a survey form
+
+HTML forms are an important part of many websites. Create a form for a survey on
+the topic of your choice.
+
+Include a variety of answer options, including text fields, dropdowns, radio
+buttons, checkboxes, and a submit button. Don't forget to add a title, and
+consider using CSS to improve the look of your form. Here's an example.
