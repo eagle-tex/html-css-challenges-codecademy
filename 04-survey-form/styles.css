@@ -1,0 +1,147 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root font-size to 62.5% of 16px, ie 1rem = 10px */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #a9d7e9;
+  font-family: 'Roboto', sans-serif;
+  width: 36rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-block: 3rem;
+  color: White;
+  text-shadow: 0.2rem 0.2rem 0.5rem #333;
+}
+
+main {
+  background-color: #f3f3f3;
+  border-radius: 0.5rem;
+  /* padding-inline: 2rem; */
+}
+
+main > p:first-child {
+  font-size: 2rem;
+  /* margin-block-end: */
+  padding: 3rem;
+}
+
+main form {
+  text-align: left;
+  padding: 2rem;
+}
+
+main form > p {
+  margin-block-end: 2rem;
+}
+
+main form > p > label {
+  display: block;
+  font-size: 1.4rem;
+  padding-block-end: 0.5rem;
+}
+
+main form > p > input,
+main form > p > textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem #dddeee;
+  transition: all 0.5s ease-in;
+}
+
+main form > p > input:focus,
+main form > p > textarea:focus {
+  outline: none;
+  border-bottom: 2px solid Orange;
+}
+
+select {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+fieldset {
+  border: none;
+  margin-block-end: 3rem;
+}
+
+fieldset legend {
+  display: block;
+  font-size: 1.4rem;
+  padding-block-end: 0.5rem;
+}
+
+fieldset > div.fieldset-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex: 1 1 50%; */
+}
+
+fieldset > div.fieldset-options p {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  height: 2.4rem;
+  /* margin-inline-start: 1rem; */
+  width: 50%;
+  /* justify-content: space-between; */
+  /* line-height: 1.6rem; */
+}
+
+fieldset p label {
+  /* text-align: left; */
+  order: 2;
+}
+
+fieldset p input {
+  text-align: left;
+  order: 1;
+  margin-inline-end: 1rem;
+}
+
+form div.buttons {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+form div.buttons button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  min-width: 8rem;
+  box-shadow: 0.1rem 0.4rem 1rem #bbb;
+  cursor: pointer;
+  color: White;
+  transition: all 0.2s ease-in-out;
+}
+
+form div.buttons button:active {
+  transform: translateY(0.1rem);
+
+  box-shadow: 0.1rem 0.2rem 1rem #bbb;
+}
+
+button.button-cancel {
+  background-color: #999;
+}
+
+button.button-submit {
+  background-color: #6ba2ce;
+}
