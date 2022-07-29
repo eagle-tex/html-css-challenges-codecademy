@@ -13,7 +13,6 @@
 body {
   background-color: #a9d7e9;
   font-family: 'Roboto', sans-serif;
-  /* width: 36rem; */
   max-width: 90%;
   margin-inline: auto;
   text-align: center;
@@ -30,12 +29,10 @@ h1 {
 main {
   background-color: #f3f3f3;
   border-radius: 0.5rem;
-  /* padding-inline: 2rem; */
 }
 
 main > p:first-child {
   font-size: 2rem;
-  /* margin-block-end: */
   padding: 3rem;
 }
 
@@ -98,14 +95,10 @@ fieldset div.fieldset-options p {
   font-size: 1.4rem;
   align-items: center;
   height: 2.4rem;
-  /* margin-inline-start: 1rem; */
   width: 50%;
-  /* justify-content: space-between; */
-  /* line-height: 1.6rem; */
 }
 
 fieldset p label {
-  /* text-align: left; */
   order: 2;
 }
 
@@ -149,7 +142,6 @@ button.button-submit {
 
 @media screen and (min-width: 768px) {
   body {
-    /* width: 70rem; */
     width: auto;
     margin-inline-start: 5%;
     margin-inline-end: 5%;
@@ -188,16 +180,9 @@ button.button-submit {
   fieldset {
     margin-block: 4rem;
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
     flex-wrap: nowrap;
     display: block;
-    /* height: auto; */
   }
-
-  /* fieldset > * { */
-  /*   display: inline; */
-  /* } */
 
   .fieldset-inner {
     display: flex;
@@ -205,13 +190,11 @@ button.button-submit {
 
   fieldset legend {
     display: inline;
-    /* display: none; */
     width: 40%;
     font-size: 1.6rem;
   }
 
   fieldset div.fieldset-options {
-    /* display: inline-flex; */
     display: inline;
     width: 59%;
   }
