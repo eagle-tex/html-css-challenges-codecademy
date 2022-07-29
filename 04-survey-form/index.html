@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visit follow-up form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My stylesheet -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Follow-up Form</h1>
+    </header>
+
+    <main id="followup-form">
+      <p>What did you think of our hotel?</p>
+      <form action="">
+        <!-- First name -->
+        <p>
+          <label for="first-name">Name</label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Enter your first name"
+          />
+        </p>
+        <!-- Email address -->
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+        </p>
+        <!-- Date of arrival -->
+        <p>
+          <label for="arrival-date">Date of arrival</label>
+          <input type="date" />
+        </p>
+        <!-- Number of days of stay -->
+        <p>
+          <label for="number-of-days">How many days did you stay ?</label>
+          <input type="number" id="number-of-days" min="1" max="10" />
+        </p>
+        <!-- Travel Motive -->
+        <p>
+          <label for="travel-motive">What was your travel motive ?</label>
+          <select name="travel-motive" id="travel-motive">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <!-- Would you recommend us -->
+        <fieldset>
+          <div class="fieldset-inner">
+            <legend>Would you recommend us?</legend>
+            <div class="fieldset-options">
+              <!-- Certainly - Definitely -->
+              <p>
+                <label for="definitely">Definitely</label>
+                <input
+                  type="radio"
+                  name="recommend-us"
+                  id="definitely"
+                  value="definitely"
+                />
+              </p>
+              <!-- Yes -->
+              <p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="recommend-us" id="yes" value="yes" />
+              </p>
+              <!-- Maybe -->
+              <p>
+                <label for="maybe">Maybe</label>
+                <input
+                  type="radio"
+                  name="recommend-us"
+                  id="maybe"
+                  value="maybe"
+                />
+              </p>
+              <!-- No - I don't think so -->
+              <p>
+                <label for="no">I don't think so</label>
+                <input type="radio" name="recommend-us" id="no" value="no" />
+              </p>
+              <!-- Never - I'd rather die -->
+              <p>
+                <label for="never">I'd rather die</label>
+                <input
+                  type="radio"
+                  name="recommend-us"
+                  id="never"
+                  value="never"
+                />
+              </p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- What can we improve -->
+        <fieldset>
+          <div class="fieldset-inner">
+            <legend>What can we improve?</legend>
+            <div class="fieldset-options">
+              <!-- Check-in -->
+              <p>
+                <label for="check-in">Check-in</label>
+                <input type="checkbox" name="check-in" id="check-in" />
+              </p>
+              <!-- Breakfast -->
+              <p>
+                <label for="breakfast">Breakfast</label>
+                <input type="checkbox" name="breakfast" id="breakfast" />
+              </p>
+              <!-- Hygiene -->
+              <p>
+                <label for="hygiene">Hygiene</label>
+                <input type="checkbox" name="hygiene" id="hygiene" />
+              </p>
+              <!-- Other -->
+              <p>
+                <label for="other">Other</label>
+                <input type="checkbox" name="other" id="other" />
+              </p>
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="comment-container">
+          <label for="comments">Leave us a comment</label>
+          <textarea id="comments" name="comments" rows="5" cols=""></textarea>
+        </p>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <p>
+            <button class="button-cancel" type="reset">Reset</button>
+          </p>
+          <p>
+            <button class="button-submit" type="submit">Submit</button>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
