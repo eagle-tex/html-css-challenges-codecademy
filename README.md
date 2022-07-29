@@ -59,3 +59,14 @@ the topic of your choice.
 Include a variety of answer options, including text fields, dropdowns, radio
 buttons, checkboxes, and a submit button. Don't forget to add a title, and
 consider using CSS to improve the look of your form. Here's an example.
+
+# Project 05 - Create a parallax website
+
+A parallax website has a fixed image in the background that stays in place while
+you scroll through other parts of the page. It's a popular effect in web design
+and gives an elegant look and feel to a page.
+
+Design a parallax webpage. Divide the page into three or four sections. Set
+three or four background images and align text to each section. You'll use
+margins, padding, and background positioning to create the effect. Here's an
+example of a parallax website.
