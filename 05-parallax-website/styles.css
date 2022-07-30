@@ -1,0 +1,121 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root font to 62.5% of 16px = 10px = 1rem. */
+:root {
+  font-size: 62.5%;
+  font-family: 'Robot', sans-serif;
+}
+
+body {
+  background-color: #eee;
+  text-align: center;
+}
+
+/* Set background details, height and position relative for all section elements */
+section {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Background images for each individual section */
+section.one {
+  background-image: url(./images/food-table.jpg);
+}
+
+section.two {
+  background-image: url(./images/ocean.jpg);
+}
+
+section.three {
+  background-image: url(./images/mountain.jpg);
+}
+
+section.four {
+  background-image: url(./images/lobby-1.jpg);
+}
+
+section.five {
+  background-image: url(./images/picnic-basket.jpg);
+}
+
+.section-inner {
+  max-width: 110rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* height: 100%; */
+  display: block;
+  margin-inline: auto;
+
+  width: 100%;
+
+  /* position: relative; */
+}
+
+.section-inner p {
+  margin-block-start: 2rem;
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 2rem;
+  background-color: rgba(200, 200, 200, 0.8);
+  color: #333;
+  text-shadow: 0.1rem 0.4rem 0.5rem #777;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(187, 187, 187, 0.5);
+}
+
+h2 {
+  font-size: 3rem;
+  display: inline-block;
+  background-color: rgba(99, 99, 99, 0.7);
+  padding: 3rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(187, 187, 187, 0.5);
+}
+
+.heading {
+  color: White;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+/* Declaractions to set 2nd section paragraph to the bottom of the bg-image */
+.two .section-inner {
+  height: 100%;
+}
+
+.two .section-inner h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.two .section-inner p {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, 0);
+}
